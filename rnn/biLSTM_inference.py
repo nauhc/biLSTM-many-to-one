@@ -25,6 +25,7 @@ class biLSTM_inference:
                                    feature_size=FEATURE_SIZE,
                                    hidden_size=HIDDEN_SIZE, num_layers=NUM_LAYERS,
                                    out_size=OUT_SIZE, use_gpu=USE_GPU).double()
+
         filename = 'checkpoint-' + self.t + \
             '-%03dEpoch-%.2f' % (self.epoch, self.accuracy)
         model.load_state_dict(torch.load(self.path + filename))

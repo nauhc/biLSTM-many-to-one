@@ -1,16 +1,19 @@
+# An exmaple main function for prediction/inference
+
 from rnn.biLSTM_inference import biLSTM_inference
 from numpy import load
 from torch import from_numpy
 
 
 def main():
-    data = load('training_data/MIMIC_MV_data.npy')
+    # data shape: [instance_size, seq_size, feature_size]
+    data = load('data/data.npy')
 
     # example for a single instance (shape: [seq_size, feature_size])
     input = from_numpy(data[0])
 
-    # # ezample for multiple instances in tensor
-    # # (shape: [batch_size, seq_size, feature_size])
+    # example for a batch of instances
+    # (shape: [batch_size, seq_size, feature_size])
     # input = from_numpy(data[0:10])
 
     time = '20200115-194901'
