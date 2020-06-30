@@ -24,7 +24,6 @@
   <!-- <a href="https://github.com/github_username/repo">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a> -->
-
   <h3 align="center">biLSTM_many_to_one</h3>
 
   <p align="center">
@@ -123,7 +122,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_ --
 2.  If using the example in main.py:
     - Add the pre-trained biLSTM model to the root directory: create a 'model' directory and put pretrained models inside
     - Add data for inference: create a 'data' directory, and put data (numpy format) inside
-    - Change the [time, epoch, accuracy] parameter in main.py to local a particular model
+    - Change the [time, epoch, accuracy] parameter in main.py to specify a particular model
     - Change the parameters in rnn/parameter.py if trained using alternative parameters
 3.  Ready to go! Run the main.py and see the predition results!
 
